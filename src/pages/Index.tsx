@@ -1,5 +1,6 @@
 
 import HeroSection from '@/components/HeroSection';
+import ProductModal from '@/components/ProductModal';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
 
@@ -177,9 +178,11 @@ const Index = () => {
                         <h3 className="text-luxury-white font-display font-bold text-2xl mb-3">{product.name}</h3>
                         <div className="flex justify-between items-center">
                           <p className="text-luxury-pink font-body font-bold text-xl">{product.price}</p>
-                          <Button size="sm" className="luxury-gradient btn-hover-effect rounded-full">
-                            View Details
-                          </Button>
+                          <ProductModal product={product}>
+                            <Button size="sm" className="luxury-gradient btn-hover-effect rounded-full">
+                              View Details
+                            </Button>
+                          </ProductModal>
                         </div>
                       </div>
                     </div>

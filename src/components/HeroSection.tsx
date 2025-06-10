@@ -64,27 +64,27 @@ const HeroSection = () => {
       {/* Main Content with Staggered Animations */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         {/* Decorative Elements */}
-        <div className="absolute -top-20 left-1/2 transform -translate-x-1/2">
+        <div className="absolute -top-32 left-1/2 transform -translate-x-1/2">
           <div className="w-32 h-32 border border-luxury-pink/30 rounded-full animate-rotate-slow"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-luxury-pink/50 rounded-full animate-pulse-glow"></div>
         </div>
 
-        <div className={`transition-all duration-1500 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 leading-tight">
-            <span className="block text-gradient animate-shimmer mb-2">Elegance</span>
-            <span className="block text-luxury-white mb-2">in Every Thread</span>
+        <div className={`transition-all duration-1500 mb-6 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight">
+            <span className="block text-gradient animate-shimmer mb-4">Elegance</span>
+            <span className="block text-luxury-white mb-4">in Every Thread</span>
             <span className="block text-gradient-alt">of Gold</span>
           </h1>
         </div>
         
-        <div className={`transition-all duration-1500 delay-500 ${isLoaded ? 'animate-slide-in-left' : 'opacity-0'}`}>
-          <p className="text-xl md:text-2xl text-luxury-white/90 max-w-3xl mx-auto mb-12 font-body leading-relaxed">
+        <div className={`transition-all duration-1500 delay-500 mb-12 ${isLoaded ? 'animate-slide-in-left' : 'opacity-0'}`}>
+          <p className="text-xl md:text-2xl text-luxury-white/90 max-w-3xl mx-auto font-body leading-relaxed">
             Discover handcrafted jewelry that blends traditional elegance with modern sophistication. 
             Each piece tells a story of artistry and passion from <span className="text-luxury-pink font-semibold">Germany</span>.
           </p>
         </div>
 
-        <div className={`flex flex-col sm:flex-row gap-6 justify-center items-center transition-all duration-1500 delay-1000 ${isLoaded ? 'animate-scale-in' : 'opacity-0'}`}>
+        <div className={`flex justify-center items-center transition-all duration-1500 delay-1000 mb-16 ${isLoaded ? 'animate-scale-in' : 'opacity-0'}`}>
           <Button 
             asChild
             size="lg"
@@ -94,21 +94,10 @@ const HeroSection = () => {
               <span className="relative z-10">Explore Collection</span>
             </a>
           </Button>
-          
-          <Button 
-            asChild
-            variant="outline"
-            size="lg"
-            className="border-2 border-luxury-pink text-luxury-pink hover:bg-luxury-pink hover:text-luxury-white transition-all duration-500 font-body font-medium text-lg px-10 py-4 rounded-full backdrop-blur-sm bg-luxury-black/20 hover:scale-110 hover:shadow-lg hover:shadow-luxury-pink/25"
-          >
-            <a href="https://wa.me/491234567890" target="_blank" rel="noopener noreferrer">
-              <span className="relative z-10">Order Now</span>
-            </a>
-          </Button>
         </div>
 
         {/* Floating Social Proof */}
-        <div className={`mt-16 transition-all duration-1500 delay-1500 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
+        <div className={`transition-all duration-1500 delay-1500 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <div className="flex justify-center items-center space-x-8 text-luxury-white/70">
             <div className="text-center">
               <div className="text-2xl font-display font-bold text-luxury-pink">500+</div>
