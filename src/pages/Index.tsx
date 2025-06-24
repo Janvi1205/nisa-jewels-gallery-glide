@@ -94,9 +94,14 @@ const Index = () => {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-luxury-pink/20 to-luxury-pink-light/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb847?w=600&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1200&h=900&fit=crop&q=100"
                   alt="Artisan crafting jewelry"
-                  className="relative rounded-2xl shadow-2xl hover:scale-105 transition-all duration-700 glow-effect"
+                  className="relative w-full h-full object-cover rounded-2xl shadow-2xl hover:scale-105 transition-all duration-700"
+                  loading="eager"
+                  style={{
+                    objectPosition: "center 30%",
+                    minHeight: "500px"
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/40 to-transparent rounded-2xl"></div>
               </div>

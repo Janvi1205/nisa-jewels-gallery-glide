@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -55,7 +54,7 @@ const About = () => {
             </div>
             <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'animate-scale-in' : 'opacity-0'}`}>
               <img
-                src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb847?w=600&h=500&fit=crop"
+                src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1200&h=600&fit=crop"
                 alt="Artisan crafting jewelry"
                 className="rounded-lg shadow-2xl hover:scale-105 transition-transform duration-500"
               />

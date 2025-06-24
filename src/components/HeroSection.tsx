@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -7,9 +6,9 @@ const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1543294001-f7cd5d7fb847?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=2069&auto=format&fit=crop',  // Gold necklace with diamonds
+    'https://images.unsplash.com/photo-1601821765780-754fa98637c1?q=80&w=2067&auto=format&fit=crop',  // Ring collection
+    'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2070&auto=format&fit=crop',  // Elegant bracelet
   ];
 
   useEffect(() => {
@@ -22,7 +21,7 @@ const HeroSection = () => {
   }, [heroImages.length]);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Animated Background Particles */}
       <div className="absolute inset-0 opacity-20">
         {[...Array(20)].map((_, i) => (
@@ -63,12 +62,7 @@ const HeroSection = () => {
 
       {/* Main Content with Staggered Animations */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        {/* Decorative Elements */}
-        <div className="absolute -top-32 left-1/2 transform -translate-x-1/2">
-          <div className="w-32 h-32 border border-luxury-pink/30 rounded-full animate-rotate-slow"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-luxury-pink/50 rounded-full animate-pulse-glow"></div>
-        </div>
-
+        {/* Removing the Decorative Elements */}
         <div className={`transition-all duration-1500 mb-6 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight">
             <span className="block text-gradient animate-shimmer mb-4">Elegance</span>
@@ -117,18 +111,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Enhanced Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-float">
-        <div className="flex flex-col items-center space-y-2">
-          <div className="text-luxury-white/60 text-sm font-body">Scroll to explore</div>
-          <div className="w-6 h-10 border-2 border-luxury-pink rounded-full flex justify-center relative overflow-hidden">
-            <div className="w-1 h-3 bg-luxury-pink rounded-full mt-2 animate-pulse"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-luxury-pink/20 to-transparent animate-shimmer"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Enhanced Carousel Indicators */}
+      {/* Removing Enhanced Scroll Indicator */}
       <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {heroImages.map((_, index) => (
           <button
